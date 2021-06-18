@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
     let input_names = ['name','phone', 'email', 'password'];
-    let input_type = ['text','text', 'email', 'password'];
+    let input_type = ['text','text', 'email', 'text'];
     $(".navbar-brand").click(function(){
     $(".navbar-toggler").addClass("collapsed");
     $(".navbar-toggler").attr("aria-expanded","false");
@@ -16,9 +16,9 @@ $(document).ready(function(){
 
       $(document).on("click", ".edit", function(){
         $(this).parents("div, .name").find(".input1").each(function(el){
-        $(this).html('<input name="' + input_names[el] + '" type="'+input_type[el]+'" class="form-control" value="' + $(this).text() + '">');
-                });
-               
+        $(this).html('<input name="' + input_names[el] + '" type="'+input_type[el]+'" class="form-control" value="' + $(this).text() + '" style="-webkit-text-security: none;">');
+    });
+    
             });
 
 

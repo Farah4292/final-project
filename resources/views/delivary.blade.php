@@ -50,7 +50,6 @@
                                               <div class="row">
                                               <div class="container col-md-7">
 
-                                              <p>* Please Click On The Earth Button Then Copy The Address And But It In The SearchBar On Google Map When Its Open</p>
                                                   <div class="col-sm-2"><h2>Order <b>List</b></h2></div><br>
                                            
                                           </div>
@@ -73,12 +72,12 @@
                                               @foreach($order as $data)
                                               <tr data-status="{{$data['states']}}">
                                                   <td>{{$data['name']}}</td>
-                                                  <td style="overflow:auto;">{{$data['address']}}</td>
+                                                  <td style="overflow:auto;" id="add">{{$data['address']}}</td>
                                                   <td>{{$data['phone']}}</td>
                                                   <td>{{$data['total_price']}}</td>
                                                   <td>{{$data['quantity']}}</td>
                                                   <td  class="no d-flex flex-row justify-content-center">
-                                                  <a  onclick="myFunction()"  href="" id="location" class="location"><img src="https://img.icons8.com/color/30/000000/earth-planet.png"/></a>
+                                                  <a  onclick="myFunction()"  href=""  id="address" class="location"><img src="https://img.icons8.com/color/30/000000/earth-planet.png"/></a>
                                                   <a class="delete"  href="{{'deleteOrder/'.$data['id']}}" title="Delete" data-toggle="tooltip"><img src="https://img.icons8.com/metro/25/fa314a/trash.png"/></a>
 
                                                

@@ -41,7 +41,6 @@
                 <div class="px-4 py-3" style="margin-top: 50px;">
                 <form action="{{url('/profile/'.$customer->id)}}" method="POST">
                      @csrf
-                     <input class="hidden" type="hidden" name="image" accept="image/*"/>
 
                  <div class="form-group ">
 
@@ -61,10 +60,9 @@
                       </div>
                  
                             <div class=" row">
-                            <label for="colFormLabel" class="col-sm-2 col-form-label ">password</label>  <p class="input1">{{$customer->password}}</p> 
-                          </div>
-                   
+                            <label for="colFormLabel" class="col-sm-2 col-form-label ">password</label>  <p class="input1" id="password" style="-webkit-text-security: disc;">{{$customer->password}}</p> 
 
+</div>
                       <div class="col-md" style="margin-top: 50px;"> 
                          <a  id="editname" class="btn edit btn-sm  btn-success" style="color:white;">Edit Profile</a>
                          <button type="submit"  class="btn save btn-sm  btn-success">Save</button>

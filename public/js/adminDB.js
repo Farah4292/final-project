@@ -150,10 +150,11 @@ $(document).on("click", ".delete", function(){
       $(this).parents("tr").remove();
   $(".add-new").removeAttr("disabled");
   });
-
+////////////////////////////////////////////////////////
 })
-function myFunction(){
-  window.open("https://www.google.com/maps", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=200,left=500,width=900,height=900");
+function myFunction(id){
+ var add=document.getElementById("add").innerHTML ;
+  window.open("https://www.google.com/maps/search/"+add, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=200,left=500,width=900,height=900");
 }
 function CopyFunction() {
   /* Get the text field */
