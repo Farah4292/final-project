@@ -10,9 +10,9 @@ use App\Models\customer;
 class adminDBcontroller extends Controller
 {
     function show(){
-        $data= product::Paginate(5);
+        $data= product::Paginate(12);
        // $dataslider= slider::all();
-        $order=order::Paginate(5);
+        $order=order::Paginate(12);
      return view('adminDashbord',["products"=>$data , "order"=>$order]);
       
        

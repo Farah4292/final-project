@@ -30,7 +30,8 @@
 <div class="col-md-6">
 <input class="form-control" type="hidden" name="id" value="{{$data['id']}}">
 <label  class="form-label">image</label>
-<input class="form-control" type="file" name="image" value="{{$data['image']}}">
+<input class="form-control" type="file" name="image" id="img" value="{{$data['image']}}">
+<p class="demo"></p>
 <label  class="form-label">name</label>
 <input class="form-control" type="text" name="name" value="{{$data['name']}}">
 </div>
@@ -65,6 +66,8 @@
 <!-- /////////////// -->
 
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </html>
